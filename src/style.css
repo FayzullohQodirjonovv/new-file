@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.gap {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 25.6px;
+  letter-spacing: 10%;
+  color: #6d6d6d;
+}
+.gap li:hover {
+  transform: translate(4px, -4px);
+  color: #0000ff;
+  transition: 450ms ease all;
+}
+.header__images {
+  transition: 200ms ease all;
+  opacity: 1;
+}
+.header__images:active {
+  transition: 200ms ease all;
+  opacity: 0.3;
+}
+#forlent {
+  display: none;
+}
+.otkirs {
+  margin-top: 100px;
+  font-weight: 900;
+  font-size: 50px;
+  letter-spacing: 3%;
+  margin-bottom: 40px;
+}
+.pshey {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 29.7px;
+  letter-spacing: 3%;
+  margin-bottom: 40px;
+}
+.btn3 {
+  background-color: blue;
+  padding: 10px 30px;
+  color: white;
+}
+.btn3:hover {
+  background-color: transparent;
+  border: 1px solid blue;
+  color: #0000ff;
+  transition: 0.5s;
+}
+.left {
+  margin-top: 300px;
+  margin-left: 200px;
+  width: 100px;
+}
+.sr {
+  margin-left: 400px;
+  margin-top: 100px;
+}
+.vektor {
+  margin-top: 400px;
+}
+.fox__boxes {
+  margin-top: 100px;
+}
+.fox__box h2 {
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 108px;
+  letter-spacing: 10%;
+  text-align: center;
+  color: #0000ff;
+}
+.fox__box p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24.3px;
+  letter-spacing: 3%;
+  text-align: center;
+}
+.just__box {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.item4 {
+  margin-top: -90px;
+}
+.item5 {
+  margin-top: -170px;
+}
+.item7 {
+  margin-top: -450px;
+}
+.just{
+  margin-top: 100px;
+}
+.just__h2{
+font-weight: 900;
+font-size: 50px;
+line-height: 96px;
+letter-spacing: 5%;
+
+}
+.p{
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 84px;
+  letter-spacing: 5%;
+  
+}
+span{
+  color: #0000ff;
+}
+input{
+  width: 50%;
+  height: 8vh;
+  padding: 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+form input{
+  margin: 10px 0px;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons button{
+  padding: 10px 30px;
+   background-color: blue;
+   color: white;
+   margin-top:30px;
+}
+.emd{
+font-weight: 700;
+font-size: 18px;
+line-height: 28.8px;
+letter-spacing: 0%;
+}
+@media (max-width: 1000px) {
+  .left {
+    display: none;
+  }
+  .sr {
+    display: none;
+  }
+  .vektor {
+    display: none;
+  }
+  .fox__boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .hero__boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .just{
+    display: none;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .paragrp{
+    text-align: center;
+  }
+  .p{
+    text-align: center;
+  }
+  .footer__boxes{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  #checkbox:checked ~ .mobile {
+    right: 0;
+    width: 100%;
+    transition: 0.5s;
+  }
+  #forlent {
+    display: block;
+    font-size: 30px;
+  }
+  .mobile {
+    background: linear-gradient(200deg, white, blue, black);
+    color: white;
+  }
+  .gap {
+    color: red;
+  }
+  .mobil__hedr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+  }
+  .hr {
+    background-color: grey;
+    width: 50%;
+    margin: 50px;
+  }
+  .hedr__jol li {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0px;
+  }
+  .hedr__jol li:hover {
+    font-size: 40px;
+    transform: translate(4px, -4px);
+    color: #0000ff;
+    transition: 450ms ease all;
+  }
+  .fox__boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .gap {
+    display: none;
+  }
+  input{
+    width: 100%;
+    height: 4vh;
+    padding: 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  form input{
+    margin: 10px 0px;
+  }
+.buttons button{
+  width: 100%;
+}
+.footer__boxes{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  text-align: center;
+}
+.center{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.fotr__img{
+  margin-left: 20%;
+  margin-top: 20px;
+}
+}
+@media (max-width: 400px) {
+  .fox__boxes {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
